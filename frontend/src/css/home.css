@@ -1,0 +1,7 @@
+.home-background-container {
+    background-image:url("../images/chris-murray-xlTv5hhOApA-unsplash.jpg");
+    background-size: 100% auto;
+    background-repeat:repeat-y;
+    width: 100%;
+    height:100vh;
+}

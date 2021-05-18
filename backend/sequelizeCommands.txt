@@ -1,0 +1,19 @@
+// Create Database 
+npx dotenv sequelize db:create
+// Migrate User Table
+npx dotenv sequelize db:migrate
+// Generate Model for Features
+npx sequelize model:generate --name Beachandpark --attributes name:string,location:string,ifBeach:boolean,ifPark:boolean
+
+//migrating the Beaches and parks
+npx dotenv sequelize db:migrate
+
+//creating reviews model
+npx sequelize model:generate --name Review --attributes beaches_and_parks_id:integer,name:string,review:string,rating:integer
+npx dotenv sequelize db:migrate
+
+
+npx sequelize seed:generate --name demo-user
+
+//seeding userdata
+npx dotenv sequelize db:seed:all

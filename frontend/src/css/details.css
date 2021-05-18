@@ -1,0 +1,7 @@
+.details-background-container {
+    background-image:url("../images/chalo-garcia-YYM1n-4c4U4-unsplash.jpg");
+    background-size: cover;
+    background-repeat:repeat-y;
+    width: 100%;
+    height:100vh;
+}

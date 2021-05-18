@@ -22,7 +22,12 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.STRING,
         allowNull: false,
         validate: {
-          len: [3, 256]
+          len: [3, 256],
+          isNotEmail(value) {
+            if (Validator.isEmail(value)) {
+              throw new Error('Cannot be an email.');
+            }
+          }
         }
       },
       hashedPassword: {

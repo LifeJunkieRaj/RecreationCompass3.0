@@ -1,0 +1,14 @@
+.navbar-logo-container{
+    background-image: url("../images/RecCompLogo2D-removebg-preview.png");
+    width: 200px;
+    height:50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bar-divider {
+    height:8px;
+    width:100%;
+    margin: 0;
+    background-color: #ffbb00;
+}

@@ -1,0 +1,7 @@
+.updates-background-container {
+    background-image:url("../images/ken-cheung-tJh_UdyrPK4-unsplash.jpg");
+    background-size: cover;
+    background-repeat:repeat-y;
+    width: 100%;
+    height:100vh;
+}

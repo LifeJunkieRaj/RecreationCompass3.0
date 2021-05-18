@@ -30,14 +30,14 @@ if (process.env.NODE_ENV !== 'production') {
 
 function Root() {
   return (
-    <ModalProvider>
+
       <Provider store={store}>
         <BrowserRouter>
           <App />
           {/* <Carrot /> */}
         </BrowserRouter>
       </Provider>
-    </ModalProvider>
+  
   );
 }
 
