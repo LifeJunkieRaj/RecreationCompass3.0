@@ -1,8 +1,8 @@
 # RecreationCompass3.0
 <br />
 <p align="center">
-  <a href="https://github.com/LifeJunkieRaj/RecreationCompass">
-    <img src="./frontend/src/images/compass_logo_favi-removebg.png" alt="Logo" width="300" height="250" style="">
+  <a href="https://github.com/LifeJunkieRaj/RecreationCompass3.0">
+    <img src="./RecreationnCompass3.0/frontend/src/images/compass_logo_favi-removebg.png" alt="Logo" width="300" height="250" style="">
     
   </a>
 
