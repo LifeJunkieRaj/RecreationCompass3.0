@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/LifeJunkieRaj/RecreationCompass">
-    <img src="./frontend/public/RecCompLogo2D-removebg-preview.png" alt="Logo" width="300" height="250" style="">
+    <img src="./frontend/src/images/compass_logo_favi-removebg.png" alt="Logo" width="300" height="250" style="">
     
   </a>
 
