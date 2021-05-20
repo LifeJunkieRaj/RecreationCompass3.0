@@ -1,8 +1,15 @@
 import React from 'react'
 import NavBar from '../Components/NavBar';
 import "../css/landing.css"
-
+import * as sessionActions from "../store/session";
+import { useSelector } from "react-redux";
+import { Redirect } from "react-router-dom";
+import Footer from '../Components/Footer';
 export default function LandingPage() {
+
+    const sessionUser = useSelector((state) => state.session.user);
+    if(sessionUser) return <Redirect to="/baps" />;
+
     return (
         <div>
             <NavBar />
@@ -20,6 +27,7 @@ export default function LandingPage() {
 
                     </div>
             </div>
+            <Footer />
         </div>
     )
 }

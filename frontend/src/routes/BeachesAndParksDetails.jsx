@@ -7,19 +7,27 @@ import Reviews from '../Components/Reviews';
 import AddReviews from '../Components/AddReviews';
 import NavBar from '../Components/NavBar';
 import "../css/details.css";
+import * as sessionActions from "../store/session";
+import { useSelector } from "react-redux";
+import { Redirect } from "react-router-dom";
+import Footer from '../Components/Footer';
+
 
 
 const BeachesAndParksDetails = () => {
     const {id} = useParams()
     const {selectedBeachesAndParks, setSelectedBeachesAndParks} = useContext(BeachesAndParksContext)
-
+    const sessionUser = useSelector((state) => state.session.user);
+    
     useEffect(() => {
+        
         const fetchData = async () => {
+            
             try{
                 const response = await RecreationCompass.get(`/${id}`)
-         
-                setSelectedBeachesAndParks(response.data.data)
                 
+                setSelectedBeachesAndParks(response.data)
+                console.log(selectedBeachesAndParks)        
             
             }catch(err){
                 console.log(err)
@@ -27,26 +35,33 @@ const BeachesAndParksDetails = () => {
            }
         fetchData()
     }, [])
+
+
     return (
+        <>
+         <NavBar pageName="loggedinpage" />
         <div className="details-background-container">
-        <div className="container">
-            <NavBar pageName="loggedinpage" />
+        {sessionUser? ( <div className="container">
+           
             {selectedBeachesAndParks && (
             <div >
-            <h1 className="text-center display-1">{selectedBeachesAndParks.baps.name}</h1>
+            <h1 className="text-center display-1">{selectedBeachesAndParks.name}</h1>
             <div className="text-center">
-                <StarRating rating={selectedBeachesAndParks.baps.average_rating}/>
-                <span className="text-warning ml-1">{selectedBeachesAndParks.baps.count ? `(${selectedBeachesAndParks.baps.count})` : "(0)"}</span>
+                <StarRating rating={selectedBeachesAndParks.average_rating}/>
+                <span className="text-warning ml-1">{selectedBeachesAndParks.count ? `(${selectedBeachesAndParks.count} reviews)` : "(0)"}</span>
             </div>
             <div className="mt-3">
-                <Reviews reviews={selectedBeachesAndParks.reviews} />
+                <Reviews reviews={selectedBeachesAndParks.Reviews} />
                 
             </div>
                 <AddReviews />
             </div>        
             )}
+        </div>): <Redirect to="/" />}
+       
         </div>
-        </div>
+        <Footer />
+        </>
     )
 }
 

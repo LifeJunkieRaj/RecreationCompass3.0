@@ -1,0 +1,11 @@
+.footer-image {
+    background-image: url("../images/PERN_stack_logo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 50px;
+}
+
+.footer-container {
+    line-height: 50px;
+}

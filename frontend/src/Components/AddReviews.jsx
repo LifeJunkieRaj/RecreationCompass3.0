@@ -26,22 +26,23 @@ function AddReviews() {
     };
     
     return (
-        <div className="nb-2">
+        <div className="nb-2 w-75 mx-auto">
             <form action="">
-                <div className="form-row">
-                    <div className="form-group col-8">
+                <div className="">
+                    <div className="form-group ">
                         <label htmlFor="name">Name</label>
                         <input 
                         value={name}
                         onChange={(e) => setName(e.target.value)}
                         id="name" placeholder="name" type="text" className="form-control"/>                        
                     </div>
-                        <div className="form-group col-4">
+                        <div className="form-group ">
                             <label htmlFor="rating">Rating</label>
+                            <div className="w-100">
                             <select 
                             value={rating}
                             onChange={(e) => setRating(e.target.value)}
-                            id="rating" className="custom-select"
+                            id="rating" className="custom-select w-100"
                         >
                                 <option disabled>Rating</option>
                                 <option value="1">1</option>
@@ -50,16 +51,20 @@ function AddReviews() {
                                 <option value="4">4</option>
                                 <option value="5">5</option>
                             </select>
+                            </div>
+                           
                         </div>
                 </div>
-                <div className="form-group">
+                <div className="form-group mb-1">
                     <label htmlFor="Review">Review</label>
                     <textarea 
                     value={reviewText}
                     onChange={(e) => setReviewText(e.target.value)}
                     id="Review" className="form-control"></textarea>
                 </div>
+                <div className="d-flex justify-content-end">
                 <button type="submit" onClick={handleSubmitReview} className="btn btn-secondary">Submit</button>
+                </div>
             </form>
         </div>
     )

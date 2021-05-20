@@ -21,7 +21,7 @@ function App() {
 
   return (
     <>
-      <Navigation isLoaded={isLoaded} />
+      
       {isLoaded && (
           <BeachesAndParksContextProvider>
           <div className="">

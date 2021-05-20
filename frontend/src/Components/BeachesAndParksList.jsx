@@ -3,6 +3,8 @@ import RecreationCompass from "../apis/RecreationCompass";
 import { BeachesAndParksContext } from "../ContextAPI/BeachesAndParksContext";
 import { useHistory } from "react-router-dom";
 import StarRating from './StarRating';
+import "../css/beachesAndParksList.css";
+
 
 const BeachesAndParksList = (props) => {
     const { baps, setBaps } = useContext(BeachesAndParksContext);
@@ -11,8 +13,8 @@ const BeachesAndParksList = (props) => {
         const fetchData = async () => {
             try {
                 const response = await RecreationCompass.get("/");
-                console.log(response.data.data)
-                setBaps(response.data.data.baps)
+                console.log(response.data)
+                setBaps(response.data)
             } catch (err) {}
         }
 
@@ -46,14 +48,14 @@ const BeachesAndParksList = (props) => {
             return <span className="text-warning">0 reviews</span>
         }
         return <>
-        <StarRating rating={beachandpark.id}/>
-        <span className="test-warning ml - 1">({beachandpark.count})</span>
+        <StarRating rating={beachandpark.average}/>
+        <span className="test-warning ml - 1">({beachandpark.count} reviews) </span>
         </>
     }
 
     return (
-        <div className="list-group">
-            <table className="table table-hover table-dark">
+        <div className="list-group beachesAndParksList">
+            <table className="table table-hover table-striped bg-white">
                <thead>
                  <tr className="bg-primary">
                      <th scope="col">Beach and/or Park</th>
@@ -71,8 +73,8 @@ const BeachesAndParksList = (props) => {
                          <tr onClick={() => handleBeachesAndParksSelect(beachandpark.id)} key={beachandpark.id}>
                              <td>{beachandpark.name}</td>
                              <td>{beachandpark.location}</td>
-                             <td>{(beachandpark.if_beach)? "Yes": "No"}</td>
-                             <td>{(beachandpark.if_park)? "Yes": "No"}</td>
+                             <td>{(beachandpark.ifBeach)? "Yes": "No"}</td>
+                             <td>{(beachandpark.ifPark)? "Yes": "No"}</td>
                              <td>{renderRating(beachandpark)}</td>
                              <td><button onClick={(e) => handleUpdate(e, beachandpark.id)} className="btn btn-warning">Update</button></td>
                              <td><button onClick={(e) => handleDelete(e, beachandpark.id)} className="btn btn-danger">Delete</button></td>

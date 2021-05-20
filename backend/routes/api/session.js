@@ -25,7 +25,8 @@ router.post(
   validateLogin,
   asyncHandler(async (req, res, next) => {
     const { credential, password } = req.body;
-    console.log('hello csurf');
+    console.log(credential);
+    console.log();
     const user = await User.login({ credential, password });
 
     if (!user) {
