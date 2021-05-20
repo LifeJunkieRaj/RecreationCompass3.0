@@ -54,10 +54,12 @@ Recreation Compass is your first free, local and national source for finding all
 ## About The Project
 [Click here to view Guruud live on the web!](https://guruud.herokuapp.com/)
 <br>
-   <img src="./"/>
-   <img src="./"/>
-   <img src="./"/>
-   <img src="./"/>
+   <img src="./frontend/src/images/LandingPage.jpg"/>
+   <img src="./frontend/src/images/HomePage.jpg"/>
+   <img src="./frontend/src/images/DetailsPage.jpg"/>
+   <img src="./frontend/src/images/UpdatePage.jpg"/>
+   <img src="./frontend/src/images/SignupPage.jpg"/>
+   <img src="./frontend/src/images/LoginPage.jpg"/>
 </br>
 
 
