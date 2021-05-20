@@ -1,8 +1,8 @@
 # RecreationCompass3.0
 <br />
 <p align="center">
-  <a href="https://github.com/LifeJunkieRaj/RecreationCompass">
-    <img src="./frontend/public/RecCompLogo2D-removebg-preview.png" alt="Logo" width="300" height="250" style="">
+  <a href="https://github.com/LifeJunkieRaj/RecreationCompass3.0">
+    <img src="./frontend/public/compass_logo_favi-removebg.png" alt="Logo" width="300" height="250" style="">
     
   </a>
 
@@ -92,7 +92,7 @@ Recreation Compass is your first free, local and national source for finding all
 
 To get a local copy up and running follow these simple steps.
 
-### Prerequisites
+### Prerequisites and Installation
 
 Here is everything we need you to do to get started with Recreation Compass.
 
@@ -102,65 +102,51 @@ After creating a directory for your project and creating two folders within it, 
 
 Install Nodejs at nodejs.org/EN/
 
-2. 
+2. Open Project in VScode
 
-CD into the backend/server directory
+```sh
+code .
+```
 
-3. Open Project
+3. CD into the bakend directory
 
-Open project folder in vscode (command is code .)
+```sh
+cd backend
+```
 
-4. Install Express
+4. Install Express and necesary packages
 
-While still in the backend directory, do the following commands:
-
-  * npm
-  ```sh
-  npm init -y
+* npm
   ```
-  * npm
+  npm install 
   ```
-  npm install express
+5. Start Backend Server
+
+* npm
+```sh
+npm start
+```
+
+6. Open another instance of Terminal in VScode
+
+7. CD into the frontend directory 
+
+```sh
+cd frontend
+```
+
+8. Install React and necesary packages
+
+* npm
   ```
-  
-5. Create Backend Folder
+  npm install 
+  ```
+9. Start Frontend Server
 
-In your backend folder, create a file called server.js
-
-6. Start Running Backend Server
-
-Inside this file on line 1 type:
-   ```sh
-  * const express = require("express")
-   ```
-  on line 3 type:
-   ```sh
-  * const app = express()
-   ```
-  on line 5 type:
-   ```sh
-  * app.listen(3000, () => {
-  *   console.log("Server is up and listening on port 3000");
-  * });
-   ```
-
-In your terminal, make sure you are in your server folder and then type in the command:
-
-  *node server.js
-  
-and if everything goes well, you should get a message saying that "Server is up and listening on port 3000.
-
-### Installation
-
-1. Clone the repo
-   ```sh
-   git clone https://github.com/LifeJunkieRaj/RecreationCompass
-   ```
-2. Install NPM packages in the React App
-   ```sh
-   npm install
-   ```
-3. Add a '.env' with your environment variables to the root of your local directory
+* npm
+```sh
+npm start
+```
 
 ### PostgreSQL Setup
 
