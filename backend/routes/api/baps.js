@@ -1,6 +1,6 @@
 const express= require('express');
-const { BeachesAndPark } = require('../../backend/db/models');
-const { Review } = require('../../backend/db/models');
+const { BeachesAndPark } = require('../../db/models');
+const { Review } = require('../../db/models');
 const router = express.Router();
 const {Op}= require('sequelize');
 
