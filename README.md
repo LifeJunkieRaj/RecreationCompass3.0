@@ -52,7 +52,7 @@ Recreation Compass is your first free, local and national source for finding all
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-[Click here to view Guruud live on the web!](https://guruud.herokuapp.com/)
+[Click here to view Recreation Compass live on the web!](https://recreationcompass.herokuapp.com/)
 <br>
    <img src="./frontend/src/images/LandingPage.jpg"/>
    <img src="./frontend/src/images/HomePage.jpg"/>
