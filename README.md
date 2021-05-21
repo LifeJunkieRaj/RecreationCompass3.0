@@ -54,12 +54,12 @@ Recreation Compass is your first free, local and national source for finding all
 ## About The Project
 [Click here to view Recreation Compass live on the web!](https://recreationcompass.herokuapp.com/)
 <br>
-   <img src="./frontend/src/images/LandingPage.jpg"/>
-   <img src="./frontend/src/images/HomePage.jpg"/>
-   <img src="./frontend/src/images/DetailsPage.jpg"/>
-   <img src="./frontend/src/images/UpdatePage.jpg"/>
-   <img src="./frontend/src/images/SignupPage.jpg"/>
-   <img src="./frontend/src/images/LoginPage.jpg"/>
+   <img src="./frontend/public/LandingPage.jpg"/>
+   <img src="./frontend/public/HomePage.jpg"/>
+   <img src="./frontend/public/DetailsPage.jpg"/>
+   <img src="./frontend/public/UpdatePage.jpg"/>
+   <img src="./frontend/public/SignupPage.jpg"/>
+   <img src="./frontend/public/LoginPage.jpg"/>
 </br>
 
 
