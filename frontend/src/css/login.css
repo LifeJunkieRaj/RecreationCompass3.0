@@ -1,5 +1,5 @@
 .login-form-wrapper{
-    height: 100vh;
+    height: 92vh;
 }
 
 .login-background-container {
@@ -7,10 +7,21 @@
     background-size: cover;
     background-repeat:repeat-y;
     width: 100%;
-    height:100vh;
+   margin-top:-15px
 }
 
 .errorContainer{
     width: 100px;
     margin: auto;
+}
+
+
+.login-form{
+    background-color: rgba(255,255,255,0.6);
+    border-radius:10px;
+  
+}
+
+.bar-divider{
+    height:5px
 }

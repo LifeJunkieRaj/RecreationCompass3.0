@@ -13,6 +13,7 @@ export default function LandingPage() {
     return (
         <div>
             <NavBar />
+            <div className="w-100 mx-auto bar-divider"></div>
             <div>
                 <div className="d-flex justify-content-center landing-background-container">
                     <p className="landing-banner-title h3 w-50 align-self-center ">

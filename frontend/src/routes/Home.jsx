@@ -16,6 +16,7 @@ const Home = () => {
     return (
         <>
         <NavBar pageName="loggedinpage"/>
+        <div className="w-100 mx-auto bar-divider"></div>
         <div className="home-background-container">
         <div  className="container  text-white" >
             

@@ -23,7 +23,7 @@ export default function NavBar(props) {
             
 
         </div>
-        <div className="w-50 mx-auto bar-divider"></div>
+        
         </>
         )
     }
@@ -42,7 +42,7 @@ export default function NavBar(props) {
           
 
         </div>
-        <div className="w-50 mx-auto bar-divider"></div>
+        
         </>
         )
     }
@@ -62,7 +62,7 @@ export default function NavBar(props) {
                 </div>
                
             </div>
-            <div className="w-50 mx-auto bar-divider"></div>
+            
             </>
         )
     }

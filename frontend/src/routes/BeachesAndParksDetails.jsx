@@ -40,6 +40,7 @@ const BeachesAndParksDetails = () => {
     return (
         <>
          <NavBar pageName="loggedinpage" />
+         <div className="w-100 mx-auto bar-divider"></div>
         <div className="details-background-container">
         {sessionUser? ( <div className="container">
            

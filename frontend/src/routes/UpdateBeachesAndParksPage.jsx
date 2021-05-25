@@ -13,6 +13,7 @@ const UpdateBeachesAndParksPage = () => {
     return (
         <>
          <NavBar pageName="loggedinpage"></NavBar>
+         <div className="w-100 mx-auto bar-divider"></div>
         <div className="updates-background-container">
         <div className="container">
            

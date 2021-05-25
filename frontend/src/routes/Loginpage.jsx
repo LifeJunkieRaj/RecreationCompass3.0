@@ -45,11 +45,12 @@ export default function Loginpage() {
     return (
       <>
        <NavBar pageName="login"/>
+       <div className="w-100 mx-auto bar-divider"></div>
         <div className="login-background-container">
         
         <div>
            
-            <div className="errorContainer text-danger border mx-auto m-3 w-25 ">
+          <div className="errorContainer text-danger  mx-auto m-3 w-25 ">
           <ul >
             {errors.map((error, idx) => (
               <li key={idx}>{error}</li>
@@ -58,7 +59,7 @@ export default function Loginpage() {
         </div>
                 <div className=" login-form-wrapper d-flex justify-content-center align-items-center">
                 
-            <form onSubmit={handleSubmit} className="border p-3 border-pill border-success" >
+            <form onSubmit={handleSubmit} className="login-form border p-3 border-pill border-success" >
                           <h1 className="text-center m-3">Login</h1>
   <div className="form-group m-1">
     <label for="exampleInputEmail1">Email address</label>
