@@ -14,7 +14,7 @@ Recreation Compass is your first free, local and national source for finding all
     <a href="https://github.com/LifeJunkieRaj/RecreationCompass/wiki"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://guruud.herokuapp.com/login">View Site</a>
+    <a href="https://recreationcompass.herokuapp.com/login">View Site</a>
     ·
     <a href="https://github.com/LifeJunkieRaj/RecreationCompass/issues">Report Bug</a>
     ·
