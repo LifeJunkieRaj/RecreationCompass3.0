@@ -110,13 +110,13 @@ Install Nodejs at nodejs.org/EN/
 code .
 ```
 
-3. CD into the bakend directory
+3. CD into the backend directory
 
 ```sh
 cd backend
 ```
 
-4. Install Express and necesary packages
+4. Install Express and necessary packages
 
 * npm
   ```
@@ -175,37 +175,27 @@ NOTE: You will end up creating two tables in your database, one for beaches and 
    heroku login
    ```
 
-5. Login to the heroku container registry
+5. Connect to git repository with Heroku
 
    ```bash
-   heroku container:login
+   heroku git:remote -a rec-compass
    ```
+6. Under Settings find "Config Vars" and click "Reveal Config Vars". Add JWT_EXPIRES_IN and JWT_SECRET
 
-6. Update the `REACT_APP_BASE_URL` variable in the Dockerfile.
-   This should be the full URL of your Heroku app: i.e. "https://flask-react-aa.herokuapp.com"
-7. Push your docker container to heroku from the root directory of your project.
-   This will build the dockerfile and push the image to your heroku container registry
+7. Push to Heroku 
+
+```bash
+git push heroku main:master
+```
+8. Migrate and Seed the database 
 
    ```bash
-   heroku container:push web -a {NAME_OF_HEROKU_APP}
+   heroku run npm run sequelize db:migrate
    ```
-
-8. Release your docker container to heroku
 
    ```bash
-   heroku container:release web -a {NAME_OF_HEROKU_APP}
+   heroku run npm run sequelize db:seed:all
    ```
-
-9. set up your database:
-
-   ```bash
-   heroku run -a {NAME_OF_HEROKU_APP} flask db upgrade
-   heroku run -a {NAME_OF_HEROKU_APP} flask seed all
-   ```
-
-10. Under Settings find "Config Vars" and add any additional/secret .env variables.
-
-11. profit
 
 ## Obstacles
 
